@@ -50,3 +50,46 @@ body.dark {
 #header-link a:hover {
   color: var(--dark-pink);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  min-width: 360px;
+}
+
+#card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 15vw));
+  gap: 0.5rem;
+  justify-items: stretch;
+  list-style: none;
+  width: 100%;
+  min-width: 360px;
+  padding: 0;
+}
+
+#card-list > .card-container {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 2px solid var(--dark-purple);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem var(--dark-purple), 0 0 1rem var(--dark-purple) inset;
+}
+
+#card-list > .card-container:hover {
+  border: 2px solid var(--dark-pink);
+}
+
+#card-list > .card-container > a {
+  display: flex;
+  justify-content: center;
+}
+
+#card-list > .card-container .card-image {
+  display:block;
+	width:100%;
+	height:auto;
+}
